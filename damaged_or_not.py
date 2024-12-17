@@ -201,8 +201,15 @@ def evaluate_binary_model(model, directory, labels):
 This code snippet is primarily focused on defining important variables that will be used throughout the machine learning project. These variables specify where data is located, where to store model files, and settings for the training process.
 """
 
-from google.colab import drive
-drive.mount('/content/drive')
+#from google.colab import drive
+#drive.mount('/content/drive')
+# Option 1: Use raw string
+data_path = r"C:\Users\dell\Downloads\data2"
+
+# Option 2: Use forward slashes
+data_path = "C:/Users/dell/Downloads/data2"
+
+
 
 location = '/content/drive/MyDrive/data2'
 top_model_weights_path = location+'/top_model_weights.h5'
